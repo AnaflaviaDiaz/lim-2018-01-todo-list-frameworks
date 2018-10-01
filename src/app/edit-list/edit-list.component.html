@@ -6,11 +6,11 @@
 <section class="container" id="edit-list">
   <div class="input-group mb-3">
     <div class="input-group-prepend">
-      <button type="button" class="btn btn-success spaces-20">Agregar</button>
+      <button type="button" class="btn btn-success spaces-20" (click)="add(texto.value); texto.value=''">Agregar</button>
     </div>
-    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    <input type="text" class="form-control" #texto>
     <div class="input-group-prepend">
-      <button type="button" class="btn btn-danger spaces-20">Borrar</button>
+      <button type="button" class="btn btn-danger spaces-20" (click)="texto.value=''">Borrar</button>
     </div>
   </div>
 </section>

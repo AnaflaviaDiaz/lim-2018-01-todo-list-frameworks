@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditListComponent implements OnInit {
 
+  // texto: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  add(value): void {
+    console.log(value);
   }
 
 }
