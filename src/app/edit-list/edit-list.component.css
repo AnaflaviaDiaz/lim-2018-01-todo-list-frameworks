@@ -1,0 +1,13 @@
+/* left rigth */
+.spaces-20-lr {
+  margin: 0 20px;
+}
+
+/* up down */
+.spaces-20-ud {
+  margin: 20px 0;
+}
+
+.title-spaces {
+  margin: 50px 0;
+}
