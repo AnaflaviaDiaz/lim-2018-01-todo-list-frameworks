@@ -5,3 +5,7 @@
 .spaces-btn-card {
   margin: 0 20px;
 }
+
+.tachado {
+  text-decoration: line-through;
+}

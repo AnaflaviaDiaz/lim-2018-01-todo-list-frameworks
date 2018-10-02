@@ -11,6 +11,8 @@ export class ShowListComponent implements OnInit {
 
   ingredients: any;
   arrIngredients: any;
+  done = false;
+  currentIngredient: string;
 
   constructor(
     private _crud: CrudFireIngredientsService
@@ -25,6 +27,15 @@ export class ShowListComponent implements OnInit {
 
   removeElem(element): void {
     this._crud.removeIngredient(element);
+  }
+
+  doneElem(element): void {
+    this.currentIngredient = element;
+    if (!this.done) {
+      this.done = true;
+    } else {
+      this.done = false;
+    }
   }
 
 }
