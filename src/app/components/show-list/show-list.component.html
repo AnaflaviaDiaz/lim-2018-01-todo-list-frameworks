@@ -1,8 +1,8 @@
 <section class="container" id="show-list">
   <div class="content-spaces">
-    <div class="card">
+    <div class="card" *ngFor="let pos of arrIngredients">
       <div class="card-body">
-        <h5 class="card-title">Ingrediente</h5>
+        <h5 class="card-title">{{pos.ingredient}}</h5>
         <a href="#" class="btn btn-success spaces-btn-card">Aceptar</a>
         <a href="#" class="btn btn-danger spaces-btn-card">Eliminar</a>
         <a href="#" class="btn btn-warning spaces-btn-card">Editar</a>

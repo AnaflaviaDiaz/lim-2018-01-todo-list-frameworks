@@ -1,15 +1,31 @@
 import { Injectable } from '@angular/core';
+import * as firebase from 'firebase';
+import { AngularFireDatabase } from '@angular/fire/database';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CrudFireIngredientsService {
 
-  constructor() { }
+  constructor(
+    public db: AngularFireDatabase
+  ) { }
 
-  createIngredient(): void {}
+  createIngredient(ingredient: string) {
+    const date = new Date().getTime();
+    return new Promise((resolve) => {
+      this.db.database.ref('ingredient/' + date)
+        .set({
+          ingredient,
+          id: date
+        });
+      resolve(true);
+    });
+  }
 
-  getIngredients(): void {}
+  getIngredients() {
+    return this.db.list('ingredient').valueChanges();
+  }
 
-  removeIngredient(): void {}
+  removeIngredient(): void { }
 }
