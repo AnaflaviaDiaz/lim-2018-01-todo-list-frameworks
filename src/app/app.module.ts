@@ -1,10 +1,13 @@
+import { environment } from './../environments/environment.prod';
+import { AngularFireModule } from '@angular/fire';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { EditListComponent } from './edit-list/edit-list.component';
-import { ShowListComponent } from './show-list/show-list.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { EditListComponent } from './components/edit-list/edit-list.component';
+import { ShowListComponent } from './components/show-list/show-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    // AngularFireModule.initializeApp(environment.firebase),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
