@@ -8,6 +8,14 @@ eliminarlas.
 **Demo:**
 ![todo-list](https://user-images.githubusercontent.com/25906896/45767595-35985e00-bc00-11e8-87e0-553c80524c13.gif)
 
+## Demostración
+
+Puedes crear nuevas tareas, puedes marcar que ya las hiciste y eliminarlas.
+
+![view](https://user-images.githubusercontent.com/15807118/46381376-977aae00-c66b-11e8-964e-54afe9e0ba97.png)
+
+En el caso de no haber instalado Angular CLI corre el comando `npm install -g @angular/cli`.
+Si clonas esta repo, debes correr en tu CLI `npm i`, después puedes probarlo localmente con `ng serve open`;
 
 ## Consideraciones generales
 
