@@ -27,5 +27,7 @@ export class CrudFireIngredientsService {
     return this.db.list('ingredient').valueChanges();
   }
 
-  removeIngredient(): void { }
+  removeIngredient(element): void {
+    this.db.object('ingredient/' + element).remove();
+  }
 }
