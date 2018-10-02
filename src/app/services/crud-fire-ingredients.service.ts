@@ -7,5 +7,9 @@ export class CrudFireIngredientsService {
 
   constructor() { }
 
-  registerIngredients(): void {}
+  createIngredient(): void {}
+
+  getIngredients(): void {}
+
+  removeIngredient(): void {}
 }
